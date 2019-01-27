@@ -1,4 +1,4 @@
-$primaryColor:#323232;
+$primaryColor: #323232;
 $secondaryColor: #FFFFFF;
 $tertiaryColor: #AFAFAF;
 $tablet:768px;
@@ -25,11 +25,11 @@ $margin__common__mobile:16px;
     font-size: 36px;
     line-height: 44px;
 }
-@mixin subheaderFont__desktop {
+@mixin subheaderFont__desktop{
     font-size: 24px;
     line-height: 32px;
 }
-@mixin normalFont__desktop {  
+@mixin normalFont__desktop{  
     font-size: 14px;
     line-height: 20px;
 }
@@ -43,4 +43,12 @@ $margin__common__mobile:16px;
 @mixin paragraphFont__mobile {
     font-size: 13px;
     line-height: 18px;
+}
+@mixin headerFont__mobile {
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin subheaderFont__mobile {
+    font-size: 14px;
+    line-height: 22px;
 }

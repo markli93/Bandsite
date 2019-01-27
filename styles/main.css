@@ -206,9 +206,9 @@ a {
 
 @media (max-width: 320px) {
   .hero__tittle {
-    margin-left: 16px;
     font-size: 24px;
     line-height: 32px;
+    margin-left: 16px;
     width: 70%;
   }
 }
@@ -236,10 +236,10 @@ h2 {
 
 @media (max-width: 320px) {
   .aboutMusician__tittle {
-    margin-left: 16px;
-    margin-bottom: 24px;
     font-size: 24px;
     line-height: 32px;
+    margin-left: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -410,10 +410,10 @@ p {
 
 @media (max-width: 320px) {
   .photoGallery__tittle {
-    margin-left: 16px;
-    margin-bottom: 24px;
     font-size: 24px;
     line-height: 32px;
+    margin-left: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -604,7 +604,7 @@ h4 {
 
 .footer__list--container ul {
   list-style: none;
-  padding-right: 48px;
+  margin-right: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +619,7 @@ h4 {
 
 @media (max-width: 768px) {
   .footer__list--container ul {
-    padding-right: 24px;
+    margin-right: 24px;
   }
 }
 
