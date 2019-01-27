@@ -1,0 +1,46 @@
+$primaryColor:#323232;
+$secondaryColor: #FFFFFF;
+$tertiaryColor: #AFAFAF;
+$tablet:768px;
+$mobile:320px;
+$margin__common__mobile:16px;
+@mixin marginLeft {
+    margin-left: 180px;
+}
+@mixin marginRight {
+    margin-right: 56px;
+}
+@mixin marginBottom {
+    margin-bottom: 48px;
+}
+@mixin navbarFont__desktop {
+    font-size: 16px;
+    line-height: 24px;    
+}
+@mixin heroFont__desktop {
+    font-size: 60px;
+    line-height: 68px;
+}
+@mixin headerFont__desktop{
+    font-size: 36px;
+    line-height: 44px;
+}
+@mixin subheaderFont__desktop {
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin normalFont__desktop {  
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin logoSize {
+    height: 24px;
+    width: 120px;
+}
+@mixin marginLeft__tablet {
+    margin-left: 24px;
+}
+@mixin paragraphFont__mobile {
+    font-size: 13px;
+    line-height: 18px;
+}
