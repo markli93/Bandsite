@@ -1,9 +1,12 @@
 @import "variables";
 @import url("../Assets/Font/stylesheet.css");
+
+// After I did this project with desktop first, I think I know why it's better to start with mobile first. ALWAYS START WITH MOBILE IN FUTURE PROJECTS!!!!
 *{
     margin: 0;
     padding: 0;
 }
+@media (max-width:1440px){
 
 body{
     @include normalFont__desktop();
@@ -36,7 +39,7 @@ header{
     display: flex;
     justify-content: center;
     padding-top: $margin__common__mobile;
-    margin-bottom: $margin__common__mobile;
+    margin-bottom: 8px;
     }
 }
 .navbar__logo{
@@ -47,11 +50,9 @@ header{
         margin: 0px;
     }
 }
-a{
-    text-decoration: none;
-}
 .navbar__list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
 
@@ -70,7 +71,7 @@ a{
         
         @media (max-width:$mobile) {
             @include paragraphFont__mobile();
-            padding: 0px 0px 3px 0px;
+            padding: 0px 0px 5px 0px;
             margin: 0px;
             width: 160px;
             display: flex;
@@ -90,6 +91,9 @@ a{
         display: flex;
         justify-content: center;
     }
+}
+a{
+    text-decoration: none;
 }
 .hero{
     @include marginBottom();
@@ -163,20 +167,24 @@ h2{
     }
 }
 .aboutMusician__picture--container{
-    @include marginBottom();
+    margin: 0px 272px 48px 272px;
     display: flex;
     justify-content: center;
 
+    @media (max-width:$tablet){
+        margin: 0px 24px 48px 24px;
+    }
+
     @media (max-width:$mobile){
-        margin-bottom: 24px;
+       margin: 0px 16px 24px 16px;
     }
 }
 .aboutMusicaian__picture{
-    width: 896px;
+    width: 100%;
     height: 450px;
    
     @media (max-width:$tablet) {
-        width:720px;
+        width:100%;
         height: 362px;
     } 
 
@@ -238,9 +246,10 @@ h3{
 .aboutMusician__biography__paragraph{
     display: flex;
     margin-bottom: 48px;
+    
     @media (max-width:$mobile){
         flex-direction: column;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
      }
 }
     p{
@@ -291,9 +300,14 @@ h3{
     }
 
      img{
+        filter: grayscale(1);
         width: 334px;
         height: 193px;
         padding: 24px 24px 0px 0px;
+
+        &:hover{
+            filter: grayscale(0);
+        }
         
         @media (max-width:$tablet) {
             width: 224px;
@@ -381,6 +395,7 @@ h4{
     width: 55%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 180px;
 
     @media (max-width:$tablet) {
@@ -412,7 +427,7 @@ h4{
     @include marginLeft();
     margin-top:$margin__common__mobile;
     padding-bottom: 40px;
-    
+
     @media (max-width:$tablet) {
     @include marginLeft__tablet
     }
@@ -423,3 +438,20 @@ h4{
         margin-left: $margin__common__mobile;
     }
  }
+}
+
+// Diving Deeper
+
+.mailto{
+    color: $secondaryColor;
+}
+.navbar__list--Bio:hover{
+    color: fuchsia;
+}
+.navbar__list--Show:hover{
+    background-color:hotpink;
+    color:teal;
+}
+.navbar__logo:hover{
+    background: gold;
+}
