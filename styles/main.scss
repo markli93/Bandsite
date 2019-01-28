@@ -12,7 +12,6 @@ body{
     font-weight: normal;
 }
 header{
-    // width: 100%;
     background: $primaryColor;
   
 }
@@ -26,6 +25,7 @@ header{
         @media (max-width:$tablet) {
         @include marginLeft__tablet;
         }
+
         @media (max-width:$mobile) {
             display: block;
             margin: 0px;
@@ -61,7 +61,7 @@ a{
 }
 .navbar__list--Bio{
         @include marginRight();
-        @include navbarFont__desktop();
+        text-align: center;
         text-decoration: none;
         color: $secondaryColor;
         width: 80px;
@@ -79,7 +79,6 @@ a{
         }
 }
 .navbar__list--Show{
-    @include navbarFont__desktop();
     color: $tertiaryColor;
     text-decoration: none;
 
@@ -99,11 +98,11 @@ a{
     background-size: cover;
     display: flex;
     align-items: center;
-    // position: relative;
 
     @media (max-width:$tablet) {
         height: 400px;
     }
+
     @media (max-width:$mobile) {
         height: 183px;
         margin-bottom: 32px;
@@ -113,12 +112,11 @@ a{
     width: 100%;
     background: #323232;
     height: 670px;  
-    // position: absolute;
     opacity: 0.5;
 
     @media (max-width:$tablet) {
         height: 400px;
-}
+    }
     @media (max-width:$mobile) {
         height: 183px;
     }
@@ -134,13 +132,13 @@ a{
     @media (max-width:$tablet) {
         @include marginLeft__tablet;
         width: 70%;
+    }
 
-}
     @media (max-width:$mobile) {
     @include headerFont__mobile;
     margin-left: $margin__common__mobile;
     width: 70%;
-}
+    }
 }
 h2{
     @include headerFont__desktop();
@@ -157,6 +155,7 @@ h2{
     @media (max-width:$tablet) {
     @include marginLeft__tablet
     }
+
     @media (max-width:$mobile) {
         @include headerFont__mobile;
         margin-left: $margin__common__mobile;
@@ -165,10 +164,8 @@ h2{
 }
 .aboutMusician__picture--container{
     @include marginBottom();
-    // width: 100%;
     display: flex;
     justify-content: center;
-    // align-items: center;
 
     @media (max-width:$mobile){
         margin-bottom: 24px;
@@ -181,7 +178,8 @@ h2{
     @media (max-width:$tablet) {
         width:720px;
         height: 362px;
-    }   
+    } 
+
     @media (max-width:$mobile){
         width: 288px;
         height: 145px;
@@ -239,12 +237,12 @@ h3{
 }
 .aboutMusician__biography__paragraph{
     display: flex;
-    // margin-right: 272px;
     margin-bottom: 48px;
     @media (max-width:$mobile){
-        display: inline-block;
+        flex-direction: column;
+        margin-bottom: 24px;
      }
-    }
+}
     p{
         width: 420px;
         padding-right: 40px;
@@ -252,9 +250,10 @@ h3{
         @media (max-width:$mobile) {
            @include paragraphFont__mobile();
            padding: 0;
+           margin-bottom: 24px;
            width: 100%;
         }
-    }
+}
 .photoGallery{
     background-color: #FAFAFA;
     padding: 48px 0px 40px 0px;
@@ -270,23 +269,27 @@ h3{
     @media (max-width:$tablet) {
     @include marginLeft__tablet
     }
+
     @media (max-width:$mobile) {
         @include headerFont__mobile;
         margin-left:$margin__common__mobile;
         margin-bottom: 24px;
-     }
+    }
 }
 .photoGallery__pictures{
     @include marginLeft();
     display: flex;
     justify-content: flex-start;
     flex-wrap:wrap;
+
     @media (max-width:$tablet) {
     @include marginLeft__tablet
     }
+
     @media (max-width:$mobile) {
         margin:$margin__common__mobile;
     }
+
      img{
         width: 334px;
         height: 193px;
@@ -297,6 +300,7 @@ h3{
             height: 126px;
 
         }
+
         @media (max-width:$mobile) {
             width: 288px;
             height: 162px;
@@ -319,6 +323,7 @@ h3{
     @media (max-width:$tablet) {
         padding-right: 24px;
     }
+
     @media (max-width:$mobile) {
         margin-bottom: 34px;
     }
@@ -330,6 +335,7 @@ h3{
     @media (max-width:$tablet) {
         @include marginLeft__tablet
     }
+
     @media (max-width:$mobile) {
         margin-left: $margin__common__mobile;
         margin-bottom: 24px;
@@ -337,9 +343,7 @@ h3{
     }
 }
 .footer__Navbar--container{
-    //  width: 50%;
      display: flex;
-    //  justify-content: space-between;
 
      @media (max-width:$tablet) {
           width: inherit;
@@ -403,15 +407,18 @@ h4{
         li{
            margin-bottom: 24px;
         }
-    }  
+}  
 .footer__copyRight{
     @include marginLeft();
     margin-top:$margin__common__mobile;
     padding-bottom: 40px;
+    
     @media (max-width:$tablet) {
     @include marginLeft__tablet
     }
+
     @media (max-width:$mobile) {
+        width: 65%;
         @include paragraphFont__mobile();
         margin-left: $margin__common__mobile;
     }

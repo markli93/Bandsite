@@ -90,8 +90,7 @@ a {
 
 .navbar__list--Bio {
   margin-right: 56px;
-  font-size: 16px;
-  line-height: 24px;
+  text-align: center;
   text-decoration: none;
   color: #FFFFFF;
   width: 80px;
@@ -117,8 +116,6 @@ a {
 }
 
 .navbar__list--Show {
-  font-size: 16px;
-  line-height: 24px;
   color: #AFAFAF;
   text-decoration: none;
 }
@@ -360,7 +357,11 @@ h3 {
 
 @media (max-width: 320px) {
   .aboutMusician__biography__paragraph {
-    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 24px;
   }
 }
 
@@ -374,6 +375,7 @@ p {
     font-size: 13px;
     line-height: 18px;
     padding: 0;
+    margin-bottom: 24px;
     width: 100%;
   }
 }
@@ -631,6 +633,7 @@ h4 {
 
 @media (max-width: 320px) {
   .footer__copyRight {
+    width: 65%;
     font-size: 13px;
     line-height: 18px;
     margin-left: 16px;
