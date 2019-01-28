@@ -13,7 +13,6 @@ body {
 }
 
 header {
-  width: 100%;
   background: #323232;
 }
 
@@ -140,26 +139,6 @@ a {
   }
 }
 
-.hero__opacity {
-  width: 100%;
-  background: #323232;
-  height: 670px;
-  position: absolute;
-  opacity: 0.5;
-}
-
-@media (max-width: 768px) {
-  .hero__opacity {
-    height: 400px;
-  }
-}
-
-@media (max-width: 320px) {
-  .hero__opacity {
-    height: 183px;
-  }
-}
-
 .hero {
   margin-bottom: 48px;
   height: 670px;
@@ -171,7 +150,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -184,6 +162,25 @@ a {
   .hero {
     height: 183px;
     margin-bottom: 32px;
+  }
+}
+
+.hero__opacity {
+  width: 100%;
+  background: #323232;
+  height: 670px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .hero__opacity {
+    height: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero__opacity {
+    height: 183px;
   }
 }
 
@@ -245,16 +242,12 @@ h2 {
 
 .aboutMusician__picture--container {
   margin-bottom: 48px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 320px) {
@@ -346,12 +339,12 @@ h3 {
   }
 }
 
-.aboutMusician__biography {
+.aboutMusician__biography__tittle {
   margin-bottom: 32px;
 }
 
 @media (max-width: 320px) {
-  .aboutMusician__biography {
+  .aboutMusician__biography__tittle {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 24px;
@@ -362,6 +355,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 48px;
 }
 
 @media (max-width: 320px) {
@@ -373,7 +367,6 @@ h3 {
 p {
   width: 420px;
   padding-right: 40px;
-  margin-bottom: 48px;
 }
 
 @media (max-width: 320px) {
@@ -381,7 +374,6 @@ p {
     font-size: 13px;
     line-height: 18px;
     padding: 0;
-    margin-bottom: 40px;
     width: 100%;
   }
 }
@@ -393,7 +385,7 @@ p {
 
 @media (max-width: 320px) {
   .photoGallery {
-    padding: 32px 0px 40px 0px;
+    padding: 32px 0px 16px 0px;
   }
 }
 
@@ -496,7 +488,7 @@ p {
 
 .footer__tittle {
   margin-left: 180px;
-  margin-right: 64px;
+  margin-right: 72px;
 }
 
 @media (max-width: 768px) {
@@ -514,13 +506,9 @@ p {
 }
 
 .footer__Navbar--container {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -568,24 +556,26 @@ p {
 }
 
 h4 {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: bold;
 }
 
 .footer__list--container {
-  font-size: 16px;
-  line-height: 24px;
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 180px;
-  width: 60%;
 }
 
 @media (max-width: 768px) {
   .footer__list--container {
     margin-left: 24px;
+    margin-right: 24px;
     width: inherit;
   }
 }

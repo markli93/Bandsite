@@ -12,7 +12,7 @@ body{
     font-weight: normal;
 }
 header{
-    width: 100%;
+    // width: 100%;
     background: $primaryColor;
   
 }
@@ -24,7 +24,7 @@ header{
         align-items: center;
 
         @media (max-width:$tablet) {
-        @include marginLeft__tablet
+        @include marginLeft__tablet;
         }
         @media (max-width:$mobile) {
             display: block;
@@ -92,20 +92,6 @@ a{
         justify-content: center;
     }
 }
-.hero__opacity{
-    width: 100%;
-    background: #323232;
-    height: 670px;  
-    position: absolute;
-    opacity: 0.5;
-
-    @media (max-width:$tablet) {
-        height: 400px;
-}
-    @media (max-width:$mobile) {
-        height: 183px;
-    }
-}
 .hero{
     @include marginBottom();
     height: 670px;
@@ -113,7 +99,7 @@ a{
     background-size: cover;
     display: flex;
     align-items: center;
-    position: relative;
+    // position: relative;
 
     @media (max-width:$tablet) {
         height: 400px;
@@ -123,7 +109,20 @@ a{
         margin-bottom: 32px;
     }
 }
+.hero__opacity{
+    width: 100%;
+    background: #323232;
+    height: 670px;  
+    // position: absolute;
+    opacity: 0.5;
 
+    @media (max-width:$tablet) {
+        height: 400px;
+}
+    @media (max-width:$mobile) {
+        height: 183px;
+    }
+}
 .hero__tittle{
   @include marginLeft();
   @include heroFont__desktop();
@@ -166,10 +165,10 @@ h2{
 }
 .aboutMusician__picture--container{
     @include marginBottom();
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     @media (max-width:$mobile){
         margin-bottom: 24px;
@@ -230,7 +229,7 @@ h3{
         margin-bottom: 40px;
      }
 }
-.aboutMusician__biography{
+.aboutMusician__biography__tittle{
     margin-bottom: 32px;
 
     @media (max-width:$mobile) {
@@ -240,6 +239,8 @@ h3{
 }
 .aboutMusician__biography__paragraph{
     display: flex;
+    // margin-right: 272px;
+    margin-bottom: 48px;
     @media (max-width:$mobile){
         display: inline-block;
      }
@@ -247,12 +248,10 @@ h3{
     p{
         width: 420px;
         padding-right: 40px;
-        margin-bottom: 48px;
 
         @media (max-width:$mobile) {
            @include paragraphFont__mobile();
            padding: 0;
-           margin-bottom: 40px;
            width: 100%;
         }
     }
@@ -261,7 +260,7 @@ h3{
     padding: 48px 0px 40px 0px;
 
     @media (max-width:$mobile) {
-        padding: 32px 0px 40px 0px;
+        padding: 32px 0px 16px 0px;
      }
 }
 .photoGallery__tittle{
@@ -302,7 +301,6 @@ h3{
             width: 288px;
             height: 162px;
             padding:0px 0px $margin__common__mobile 0px;
-
         }
      }
 }
@@ -327,10 +325,10 @@ h3{
 }
 .footer__tittle{
     @include marginLeft();
-    margin-right: 64px;
+    margin-right: 72px;
 
     @media (max-width:$tablet) {
-    @include marginLeft__tablet
+        @include marginLeft__tablet
     }
     @media (max-width:$mobile) {
         margin-left: $margin__common__mobile;
@@ -339,13 +337,13 @@ h3{
     }
 }
 .footer__Navbar--container{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+    //  width: 50%;
+     display: flex;
+    //  justify-content: space-between;
 
-    @media (max-width:$tablet) {
-        width: inherit;
-    }
+     @media (max-width:$tablet) {
+          width: inherit;
+     }
 
     @media (max-width:$mobile) {
         flex-direction: column;
@@ -372,19 +370,21 @@ h3{
     }
 }
 h4{
-    @include navbarFont__desktop();
+    @include normalFont__desktop();
     font-weight: bold;
 }
 .footer__list--container{
-    @include navbarFont__desktop();
+    width: 55%;
     display: flex;
+    justify-content: space-between;
     margin-left: 180px;
-    width: 60%;
 
     @media (max-width:$tablet) {
-    @include marginLeft__tablet;
+        @include marginLeft__tablet;
+        margin-right:24px;
         width: inherit;
     }
+
     @media (max-width:$mobile) {
         @include paragraphFont__mobile();
         flex-direction: column;
