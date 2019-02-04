@@ -137,7 +137,7 @@ a{
     }
 
   }
-.hero__tittle__subtittle{
+.hero__tittle__subheader{
       @include navbarFont__desktop;
       font-weight: normal;
       padding-bottom: 16px;
@@ -223,22 +223,14 @@ thead{
          @media (min-width:$desktop){
             width: 804px;
              display: flex;
-            //  margin-right: 460px;
       }
       tr{
-              display: flex;
-            //   justify-content: space-between;
-            @media (min-width:$desktop){
-                //  margin-left: 160px;
-          }
-
-           
+              display: flex;   
              
           td{
             color: #AFAFAF;
             width: 150px;
-            margin-right: 32px;
-            // margin-right: 200px; 
+            margin-right: 32px; 
             
             @media (min-width:$desktop){
                 width: 160px;
@@ -256,13 +248,11 @@ tbody{
     @media (min-width:$tablet){
         display: flex;
         width: 720px;
-        // justify-content: space-between;
         align-items: center;
     }
     @media (min-width:$desktop){
         display: flex;
         width: 804px;
-        // justify-content: space-between;
         align-items: center;
     }
     }

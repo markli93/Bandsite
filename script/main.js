@@ -75,10 +75,8 @@ form.addEventListener('submit',function(event){
         text: event.target.inputComment.value
     }
     exisitingComment.unshift(newComment);
-    document.getElementById('outputComment').innerHTML = '';
+    document.getElementById('outputComment').innerHTML = ''
+    document.getElementById('userInput').value='';
+    document.getElementById('inputComment').value='';
     appendchild();
 });
-  // clear innerHTML in your outputComment.innerHTML = '';
-    // wrap for loop in a function
-    // call the function
-// csall your function to show default comments
