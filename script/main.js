@@ -75,7 +75,7 @@ form.addEventListener('submit',function(event){
         text: event.target.inputComment.value
     }
     exisitingComment.unshift(newComment);
-    document.getElementById('outputComment').innerHTML = ''
+    document.getElementById('outputComment').innerHTML ='';
     document.getElementById('userInput').value='';
     document.getElementById('inputComment').value='';
     appendchild();
