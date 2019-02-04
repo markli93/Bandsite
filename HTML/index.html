@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bandsite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" /> 
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar__logo--container"><a href="./index.html"> <img src="../Assets/Logo/Logo-bandsite.png" class="navbar__logo" alt="Band Logo"></div></a>
             <ul class="navbar__list">
-                <a href="#">
+                <a href="#bio">
                     <li class="navbar__list--Bio">Biography</li>
                 </a>
-                <a href="#">
+                <a href="./shows.html">
                     <li class="navbar__list--Show">Shows</li>
                 </a>
             </ul>
@@ -26,7 +26,7 @@
             <div class="hero__opacity"></div>
             <h1 class="hero__tittle">Gaspard Auge & Xavier de Rosnay</h1>
         </section>
-        <section class="aboutMusician">
+        <section class="aboutMusician" id="bio">
             <h2 class="aboutMusician__tittle">About the Musicians</h2>
             <div class="aboutMusician__picture--container"><img src="../Assets/Images/singer.jpg" class="aboutMusicaian__picture"
                     alt="singer"></div>
@@ -55,6 +55,21 @@
                 <img src="../Assets/Images/Photo-gallery-8.jpg" alt="img 8">
                 <img src="../Assets/Images/Photo-gallery-9.jpg" alt="img 9">
             </div>
+        </section>
+        <section class="form--container">
+            <form id="form">
+                <h2 class="form__header">Join the Conversation</h2>
+                <div class='form__input--container'>
+                <label for="userName">NAME</label>
+                <div class="form__logo"><img src="../Assets/Images/Mohan-muruge.jpg" alt="photo">
+                <input type="text" id="userInput" name="userInput">
+                </div>
+                <label for="userComment">COMMENT</label>
+                <textarea id="inputComment" name="inputComment">Add a new comment</textarea>
+                <div class="cta"><button type="submit" >COMMENT</button></div>
+                </div>
+            </form>
+            <div id="outputComment"></div>
         </section>
     </main>
     <footer class="footer--color">
@@ -93,6 +108,7 @@
             </ul>
         </div>
         <div class="footer__copyRight">Copyright The Bees Knees © 2018 All Rights Reserved</div>
+        <script src="../script/main.js"></script>
     </footer>
 </body>
 </html>
