@@ -16,36 +16,55 @@ var exisitingComment =[
    }
 ];
 
+/*create a function that append the array to HTML*/
 
-function appendchild(){
+function displayComment(){
 for(i = 0;i < exisitingComment.length; i++){
     var Container = document.createElement('div');
     Container.classList.add('comment__Container');
+
     var logo= document.createElement('div');
     logo.classList.add('comment__logo');
+
     var header__container = document.createElement('div');
-    header__container.classList.add('comment__username--container')
+    header__container.classList.add('comment__username--container');
+
     var usernme__container =document.createElement('div');
     usernme__container.classList.add('comment__username--spacing');
+
     var Name = document.createElement('div');
     Name.innerText = exisitingComment[i].name;
     Name.classList.add('comment__username');
+
     var date = document.createElement('div');
     date.innerText = exisitingComment[i].date;
+
     var comment = document.createElement('div');
     comment.innerText= exisitingComment[i].text;
     comment.classList.add('comment__text');
+
     usernme__container.appendChild(Name);
     usernme__container.appendChild(date);
+
     header__container.appendChild(logo);
     header__container.appendChild(usernme__container);
+
     Container.appendChild(header__container);
     Container.appendChild(comment);
+
     document.getElementById('outputComment').appendChild(Container);
 }
 }
 
-appendchild();
+//function call to display array when page refresh.
+displayComment();
+
+/*
+Do we need to display defualt username>??
+document.getElementById('userInput').value='Mohan Muruge';
+*/
+
+//Get the current date when comment submit
 
 function dates() {
     var date = new Date();
@@ -67,6 +86,8 @@ return date;
 
 var form = document.getElementById('form');
 
+// crate a new object that stores submitted information and push it to the array then display new array
+
 form.addEventListener('submit',function(event){
     event.preventDefault();
     var newComment={
@@ -78,5 +99,5 @@ form.addEventListener('submit',function(event){
     document.getElementById('outputComment').innerHTML ='';
     document.getElementById('userInput').value='';
     document.getElementById('inputComment').value='';
-    appendchild();
+    displayComment();
 });

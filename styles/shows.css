@@ -189,6 +189,7 @@ a {
 @media (min-width: 1440px) {
   .hero__tittle {
     margin-left: 180px;
+    margin-top: 160px;
     width: 40%;
   }
 }
@@ -266,7 +267,7 @@ h2 {
 
 @media (min-width: 1440px) {
   .hero__music {
-    margin: 220px 180px 0px 0px;
+    margin: 285px 180px 0px 0px;
   }
 }
 
@@ -331,6 +332,8 @@ thead {
 
 @media (min-width: 1440px) {
   thead {
+    font-size: 16px;
+    line-height: 24px;
     width: 804px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -443,7 +446,7 @@ tbody {
 th {
   display: block;
   margin-bottom: 16px;
-  color: #AFAFAF;
+  color: #E1E1E1;
   text-align: start;
 }
 

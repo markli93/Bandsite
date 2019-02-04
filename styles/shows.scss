@@ -133,6 +133,7 @@ a{
     }
     @media (min-width:$desktop){
         @include marginLeft();
+        margin-top: 160px;
         width: 40%;
     }
 
@@ -183,8 +184,7 @@ h2{
     margin: 0px 0px 96px 24px;
 }
     @media (min-width:$desktop){
-    margin: 220px 180px 0px 0px;
-
+    margin: 285px 180px 0px 0px;
 }
 }
 .table{
@@ -221,8 +221,9 @@ thead{
          display: flex;
     }
          @media (min-width:$desktop){
+            @include navbarFont__desktop;
             width: 804px;
-             display: flex;
+            display: flex;
       }
       tr{
               display: flex;   
@@ -298,7 +299,7 @@ tbody{
 th{
     display: block;
     margin-bottom: 16px;
-    color: #AFAFAF;
+    color: #E1E1E1;
     text-align: start;
 
     @media (min-width:$tablet){
